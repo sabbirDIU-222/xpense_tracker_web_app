@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: AppColors.primary,
       ),
-      home: Home(),
+      routes: {
+        '/' : (context) => Home(),
+      },
     );
   }
 }

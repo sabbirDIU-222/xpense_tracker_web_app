@@ -1,9 +1,8 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:xpense_flutter_web/utils/colors.dart';
 import 'package:xpense_flutter_web/utils/styles.dart';
+
 
 class NavBar extends StatefulWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -13,6 +12,7 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
+
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
@@ -62,7 +62,7 @@ class _NavBarState extends State<NavBar> {
               onPressed: () {},
               child: Text('Request a Demo',style: TextStyle(color: AppColors.primary),),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -72,7 +72,8 @@ class _NavBarState extends State<NavBar> {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 10),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+          },
           child: Text(
             text,
             style: TextStyle(
@@ -82,6 +83,7 @@ class _NavBarState extends State<NavBar> {
           )),
     );
   }
+
 
   Widget navlogo() {
     return Container(
